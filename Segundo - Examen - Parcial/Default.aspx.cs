@@ -1,4 +1,5 @@
-﻿using Segundo___Examen___Parcial.Clases;
+﻿using Newtonsoft.Json;
+using Segundo___Examen___Parcial.Clases;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace Segundo___Examen___Parcial
         protected void Page_Load(object sender, EventArgs e)
         {
             bloqueo();
+            Button2.Visible = false;
         }
         public void bloqueo()
         {
@@ -40,6 +42,12 @@ namespace Segundo___Examen___Parcial
             TextBoxNombre.Text = " ";
             TextBoxartista.Text = " "; 
             TextBoxtiempo.Text = " "; 
+        }
+        public void GuardarJson()
+        {
+            string json = JsonConvert.SerializeObject(albums);
+            string archivo = Server.MapPath("Archivo Albumes.json");
+            System.IO.File.WriteAllText(archivo, json);
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
@@ -114,6 +122,7 @@ namespace Segundo___Examen___Parcial
                     limpiar_campos();
                 }
             }
+            Button2.Visible = true;
         }
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
@@ -131,6 +140,14 @@ namespace Segundo___Examen___Parcial
             {
                 desbloqueo();
             }
+        }
+
+        protected void Button_guardar_Click(object sender, EventArgs e)
+        {
+
+           Albúm uni = albums.Find(u => u.Titulo_albúm == TextBoxtitulo.Text);
+
+            Button2.Visible = false;
         }
     }
 }
