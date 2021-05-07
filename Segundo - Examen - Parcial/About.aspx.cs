@@ -80,6 +80,8 @@ namespace Segundo___Examen___Parcial
             Label9.Visible = false;
             Label8.Visible = false; TextBoxtiempo.Enabled = false;
             TextBoxtiempo.Visible = false; Label6.Visible = false; Button1.Visible = false;
+            Button3_modificar.Visible = false;
+            Button2_editar.Visible = false; Button3_eliminar.Visible = false;
         }
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
