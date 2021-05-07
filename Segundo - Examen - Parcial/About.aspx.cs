@@ -2,6 +2,7 @@
 using Segundo___Examen___Parcial.Clases;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -17,7 +18,37 @@ namespace Segundo___Examen___Parcial
         static List<Canción> canciones = new List<Canción>();
         protected void Page_Load(object sender, EventArgs e)
         {
+            MaintainScrollPositionOnPostBack = true;
+            if (!IsPostBack)
+            {
+                //Cada vez que se corre el programa, se cargan las universidades existentes en el archivo Json
+
+                //se usará el archivo de universidades
+                string archivo = Server.MapPath("Archivo Albumes.json");
+                //se abre el archivo
+                StreamReader jsonStream = File.OpenText(archivo);
+
+                //se lee todo el contenido del archivo y el contenido se guarda en la variable json
+                string json = jsonStream.ReadToEnd();
+
+                jsonStream.Close();
+
+                //Se deserializa (convierte) la cadena json en la estructura que tiene la lista universidades
+                albums = JsonConvert.DeserializeObject<List<Albúm>>(json);
+                bloqueo();
+            }
+            GridView_Universidades.DataSource = albums;
+            GridView_Universidades.DataBind();
             desbloqueo1(false);
+            Button1.Visible = false;
+            if (seleccionar == true)
+            {
+                DropDownList_mostrar.Visible = true;
+            }
+            else if (seleccionar == false)
+            {
+                DropDownList_mostrar.Visible = false;
+            }
         }
         public void desbloqueo1(bool ingreso )
         {
@@ -175,6 +206,11 @@ namespace Segundo___Examen___Parcial
                 GuardarJson(); limpiar_campos();
                 TextBox_codigo.Text = ""; bloqueo(); desbloqueo1(true); Button1.Visible = true;
             }
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
