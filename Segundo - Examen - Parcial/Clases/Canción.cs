@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Segundo___Examen___Parcial.Clases
 {
-    public class Canciones
+    public class Canción
     {
         string nombre_canción;
         string artista_canción;

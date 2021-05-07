@@ -170,7 +170,7 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Clases\Albúm.cs" />
-    <Compile Include="Clases\Canciones.cs" />
+    <Compile Include="Clases\Canción.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
