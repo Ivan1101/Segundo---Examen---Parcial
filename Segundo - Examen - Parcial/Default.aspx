@@ -45,7 +45,7 @@
     <br />
     <asp:Button ID="Button1" runat="server" Height="32px" OnClick="Button1_Click" Text="Ingresar" Width="118px" />
         <asp:Button ID="Button2" runat="server" Height="32px" Text="Guardar Datos" Width="180px" BackColor="#0066FF" ForeColor="White" OnClick="Button_guardar_Click" />
-          
+            </div> 
     <div>
     </div>
 </asp:Content>
