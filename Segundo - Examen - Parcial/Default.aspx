@@ -11,12 +11,12 @@
             <p>Ingrese el titulo del album
                 <asp:TextBox ID="TextBoxtitulo" runat="server" Width="298px"></asp:TextBox>
             &nbsp;&nbsp;
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator" runat="server" ControlToValidate="TextBoxUniversidad" ErrorMessage="  Debe ingresar el titulo del album" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator" runat="server" ControlToValidate="TextBoxtitulo" ErrorMessage="  Debe ingresar el titulo del album" SetFocusOnError="True"></asp:RequiredFieldValidator>
                <p>Nombre del artista
                 <asp:TextBox ID="TextBoxnombre_artista" runat="server"></asp:TextBox>
             </p>
             <p>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidatorUniversidad" runat="server" ControlToValidate="TextBoxUniversidad" ErrorMessage="Debe ingresar el nombre del artista" SetFocusOnError="True"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidatorUniversidad" runat="server" ControlToValidate="TextBoxnombre_artista" ErrorMessage="Debe ingresar el nombre del artista" SetFocusOnError="True"></asp:RequiredFieldValidator>
                  <p>
             &nbsp;<asp:Label ID="Label3" runat="server" ForeColor="Black" Text="Fecha de publicación:"></asp:Label>
             <br />

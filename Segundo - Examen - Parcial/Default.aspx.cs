@@ -13,12 +13,12 @@ namespace Segundo___Examen___Parcial
     public partial class _Default : Page
     {
         static int seleccionado;
-        List<Albúm> albums = new List<Albúm>();
-        List<Canción> canciones = new List<Canción>();
+        static List<Albúm> albums = new List<Albúm>();
+        static List<Canción> canciones = new List<Canción>();
         protected void Page_Load(object sender, EventArgs e)
         {
             MaintainScrollPositionOnPostBack = true;
-            /*if (!IsPostBack)
+            if (!IsPostBack)
             {
                 //Cada vez que se corre el programa, se cargan las universidades existentes en el archivo Json
 
@@ -35,8 +35,7 @@ namespace Segundo___Examen___Parcial
                 //Se deserializa (convierte) la cadena json en la estructura que tiene la lista universidades
                 albums = JsonConvert.DeserializeObject<List<Albúm>>(json);
                 bloqueo();
-            }*/
-            bloqueo();
+            }
             Button2.Visible = false; 
         }
         public void bloqueo()
