@@ -15,13 +15,13 @@ namespace Segundo___Examen___Parcial
     {
 
         /// <summary>
-        /// Control TextBoxUniversidad.
+        /// Control TextBoxtitulo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxUniversidad;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxtitulo;
 
         /// <summary>
         /// Control RequiredFieldValidator.
@@ -33,13 +33,13 @@ namespace Segundo___Examen___Parcial
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator;
 
         /// <summary>
-        /// Control TextBoxid_universidad.
+        /// Control TextBoxnombre_artista.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxid_universidad;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxnombre_artista;
 
         /// <summary>
         /// Control RequiredFieldValidatorUniversidad.
@@ -78,6 +78,15 @@ namespace Segundo___Examen___Parcial
         protected global::System.Web.UI.WebControls.DropDownList DropDownList_registro;
 
         /// <summary>
+        /// Control Label4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label4;
+
+        /// <summary>
         /// Control TextBoxNombre.
         /// </summary>
         /// <remarks>
@@ -87,6 +96,15 @@ namespace Segundo___Examen___Parcial
         protected global::System.Web.UI.WebControls.TextBox TextBoxNombre;
 
         /// <summary>
+        /// Control Label5.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label5;
+
+        /// <summary>
         /// Control TextBoxartista.
         /// </summary>
         /// <remarks>
@@ -94,6 +112,15 @@ namespace Segundo___Examen___Parcial
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBoxartista;
+
+        /// <summary>
+        /// Control Label6.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label6;
 
         /// <summary>
         /// Control TextBoxtiempo.

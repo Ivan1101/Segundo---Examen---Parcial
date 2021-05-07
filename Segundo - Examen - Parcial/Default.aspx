@@ -9,11 +9,11 @@
         <div class="col-md-4">
             <h1>Album</h1>
             <p>Ingrese el titulo del album
-                <asp:TextBox ID="TextBoxUniversidad" runat="server" Width="298px"></asp:TextBox>
+                <asp:TextBox ID="TextBoxtitulo" runat="server" Width="298px"></asp:TextBox>
             &nbsp;&nbsp;
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator" runat="server" ControlToValidate="TextBoxUniversidad" ErrorMessage="  Debe ingresar el titulo del album" SetFocusOnError="True"></asp:RequiredFieldValidator>
                <p>Nombre del artista
-                <asp:TextBox ID="TextBoxid_universidad" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBoxnombre_artista" runat="server"></asp:TextBox>
             </p>
             <p>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidatorUniversidad" runat="server" ControlToValidate="TextBoxUniversidad" ErrorMessage="Debe ingresar el nombre del artista" SetFocusOnError="True"></asp:RequiredFieldValidator>
@@ -22,7 +22,7 @@
             <br />
             <asp:Calendar ID="Calendarfecha_publicación" runat="server"></asp:Calendar>   
                 <br /> <br />
-                     <strong>Tipo de canción:</strong> &nbsp;&nbsp;
+                     <strong>Tipo de canciones del album:</strong> &nbsp;&nbsp;
                      <asp:DropDownList ID="DropDownList_registro" runat="server" Height="17px" Width="109px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True">
                          <asp:ListItem>Pop</asp:ListItem>
                          <asp:ListItem>Electronica</asp:ListItem>
@@ -32,16 +32,16 @@
     </div>
         <div class="row">
                     <div class="col-xs-3" style="left: 0px; top: 0px">
-                                <strong>Nombre de la canción:</strong>
-                     <asp:TextBox ID="TextBoxNombre" runat="server"></asp:TextBox>
+                                <asp:Label ID="Label4" runat="server" Text="Nombre de la canción:"></asp:Label>
+&nbsp;<asp:TextBox ID="TextBoxNombre" runat="server"></asp:TextBox>
                             </div>
                         <div class="col-xs-3">
-                            <strong>Artista:</strong>
-                            <asp:TextBox ID="TextBoxartista" runat="server"></asp:TextBox>
+                            <asp:Label ID="Label5" runat="server" Text="Artista:"></asp:Label>
+&nbsp;<asp:TextBox ID="TextBoxartista" runat="server"></asp:TextBox>
                         </div>
                         <div class="col-xs-3">
-                            <strong>Tiempo de duración:</strong>
-                            <asp:TextBox ID="TextBoxtiempo" runat="server"></asp:TextBox>   </div>
+                            <asp:Label ID="Label6" runat="server" Text="Tiempo de duración:"></asp:Label>
+&nbsp;<asp:TextBox ID="TextBoxtiempo" runat="server"></asp:TextBox>   </div>
     <br />
     <asp:Button ID="Button1" runat="server" Height="32px" OnClick="Button1_Click" Text="Ingresar" Width="118px" />
         <asp:Button ID="Button2" runat="server" Height="32px" Text="Guardar Datos" Width="180px" BackColor="#0066FF" ForeColor="White" OnClick="Button_guardar_Click" />
